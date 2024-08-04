@@ -1,0 +1,81 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #fbf9ef;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-left: 35px;
+}
+
+.selector {
+  color: transparent;
+  background-image: linear-gradient(to right, #658352 50%, #343a40 50%);
+  background-position: 100%;
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: background-position 0.5s ease;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.selector:hover {
+  background-position: 0;
+}
+
+.navbar-right {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-right: 35px;
+}
+
+.selector-2 {
+  width: auto;
+  border-radius: 25px;
+  align-items: center;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 12px 17px;
+  margin: 10px;
+}
+
+#book-now {
+  border: #658352 solid; /* Added explicit border style and width */
+  background-color: #658352;
+  align-items: center;
+  color: #e9e4c3;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+#book-now:hover {
+  background-color: black;
+  color: #fbf9ef;
+}
+
+#learn-more {
+  border: #658352 solid;
+  color: #658352;
+  text-decoration: none;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+#learn-more:hover {
+  background-color: black;
+  color: #fbf9ef;
+}

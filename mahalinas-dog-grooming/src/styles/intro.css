@@ -1,0 +1,19 @@
+.intro-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #fbf9ef;
+  padding: 40px;
+  margin: auto;
+}
+
+.main-header {
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.intro-text {
+  font-size: 17px;
+  text-align: center;
+  padding-bottom: 50px;
+}
