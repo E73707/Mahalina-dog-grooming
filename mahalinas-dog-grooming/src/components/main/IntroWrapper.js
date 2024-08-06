@@ -11,6 +11,14 @@ export default function IntroWrapper() {
         friend deserves the best pampering experience without leaving the
         comfort of their home.
       </p>
+      <div className="intro-buttons">
+        <a id="book-now-intro" className="selector-intro" href="#book-now">
+          Book now
+        </a>
+        <a id="learn-more-intro" className="selector-intro" href="#learn-more">
+          Learn more
+        </a>
+      </div>
     </div>
   );
 }
