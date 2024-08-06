@@ -11,6 +11,22 @@
 }
 
 .main-wrapper {
-  padding-left: 75px;
-  padding-right: 75px;
+  margin-left: 75px;
+  margin-right: 75px;
+}
+
+.features-text {
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.features-text:hover {
+  background-color: #658352;
+  color: #fbf9ef;
+}
+
+@media screen and (max-width: 890px) {
+  .features-text {
+    width: 100%;
+  }
 }

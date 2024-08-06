@@ -17,3 +17,49 @@
   text-align: center;
   padding-bottom: 50px;
 }
+
+#book-now-intro {
+  border: #658352 solid; /* Added explicit border style and width */
+  background-color: #658352;
+  align-items: center;
+  color: #e9e4c3;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+#book-now-intro:hover {
+  background-color: black;
+  color: #fbf9ef;
+}
+
+#learn-more-intro {
+  border: #658352 solid;
+  color: #658352;
+  text-decoration: none;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+#learn-more-intro:hover {
+  background-color: black;
+  color: #fbf9ef;
+}
+.intro-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.selector-intro {
+  width: auto;
+  border-radius: 25px;
+  align-items: center;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 12px 17px;
+  margin: 10px;
+}
+
+@media screen and (min-width: 890px) {
+  .selector-intro {
+    display: none;
+  }
+}
