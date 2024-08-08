@@ -1,0 +1,106 @@
+.offers-home {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.offers-container {
+  padding-top: 200px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.offers-container-width {
+  gap: 80px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.grid-1 {
+  width: 100%;
+  display: grid;
+  grid-gap: 80px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.offers-card {
+  position: sticky;
+  top: 15%;
+  border-radius: 10px;
+  gap: 20px;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  padding: 32px;
+  margin-bottom: 32px;
+  padding-top: calc(var(--index) * var(1.5em));
+}
+
+.offers-card-number {
+  font-size: 40px;
+  font-weight: 700;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.rotate-left {
+  transform: rotate(-2deg);
+  background-color: #c9b9a2;
+}
+.rotate-right {
+  transform: rotate(2deg);
+  background-color: #b7a976;
+}
+
+#card1 {
+  --index: 1;
+}
+#card2 {
+  --index: 2;
+}
+#card3 {
+  --index: 3;
+}
+#card4 {
+  --index: 4;
+}
+
+.offers-text {
+  position: sticky;
+  top: 15%;
+  gap: 20px;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  margin-bottom: 32px;
+  --index: 1;
+}
+
+@media screen and (max-width: 980px) {
+  .grid-1 {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    max-width: 650px;
+    min-width: 408px;
+  }
+}
+
+.offers-text p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+.dog {
+  width: 100%;
+  border-radius: 50px;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+}

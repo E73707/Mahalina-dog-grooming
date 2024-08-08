@@ -8,6 +8,7 @@
   left: 0;
   right: 0;
   max-height: 100px;
+  z-index: 50;
 }
 .header-wrapper {
   width: 100%;

@@ -13,8 +13,9 @@
   padding-bottom: 50px;
 }
 .intro-text {
-  font-size: 17px;
+  font-size: 20x;
   text-align: center;
+  line-height: 1.5;
   padding-bottom: 50px;
 }
 
@@ -62,4 +63,11 @@
   .selector-intro {
     display: none;
   }
+}
+
+.dog {
+  width: 100%;
+  border-radius: 50px;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
 }

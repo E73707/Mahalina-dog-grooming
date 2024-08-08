@@ -1,9 +1,8 @@
 .carousel-section {
-  justify-content: center;
-  text-align: center;
-  background-color: #f8f8f8;
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 200px;
+  display: flex;
+}
+.motion-wrapper {
+  display: flex;
+  overflow: hidden;
+  max-width: 100%;
 }
