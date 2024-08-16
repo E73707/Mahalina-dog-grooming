@@ -1,7 +1,7 @@
 .header {
   display: flex;
   align-items: center;
-  background-color: #fbf9ef;
+  background-color: #e5d0e3;
   width: 100%;
   position: fixed;
   top: 0;
@@ -27,13 +27,13 @@
 
 .selector {
   color: transparent;
-  background-image: linear-gradient(to right, #658352 50%, #343a40 50%);
+  background-image: linear-gradient(to right, #4f9dfe 50%, #343a40 50%);
   background-position: 100%;
   background-size: 200% 100%;
   background-clip: text;
   -webkit-background-clip: text;
   transition: background-position 0.5s ease;
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 10px;
   margin: 10px;
   text-align: center;
@@ -56,7 +56,7 @@
 
 .selector-2 {
   width: auto;
-  border-radius: 25px;
+  border-radius: 12px;
   align-items: center;
   font-size: 15px;
   font-weight: bold;
@@ -67,26 +67,27 @@
 }
 
 #book-now {
-  border: #658352 solid; /* Added explicit border style and width */
-  background-color: #658352;
+  border: #af63a8 solid; /* Added explicit border style and width */
+  background-color: #e5d0e3;
   align-items: center;
-  color: #e9e4c3;
+  color: black;
   transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 #book-now:hover {
-  background-color: black;
+  background-color: #af63a8;
   color: #fbf9ef;
 }
 
 #learn-more {
-  border: #658352 solid;
-  color: #658352;
+  border: #af63a8 solid;
+  color: black;
   text-decoration: none;
   transition: background-color 0.5s ease, color 0.5s ease;
 }
 #learn-more:hover {
-  background-color: black;
+  background-color: #4f9dfe;
+  border: #4f9dfe solid;
   color: #fbf9ef;
 }
 .nav-logo {
@@ -107,7 +108,7 @@
   &:hover,
   &:focus {
     span {
-      background: blue;
+      background: #d892d1;
     }
   }
   /* transform: rotate(90deg); */
@@ -116,7 +117,7 @@
     width: 20px;
     height: 3px;
     margin-bottom: 4px;
-    background: #000;
+    background: #af63a8;
     border-radius: 2px;
     transition: all 0.2s linear;
   }
@@ -149,7 +150,7 @@
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: #fbf9ef;
+  background-color: #e5d0e3;
   z-index: 3;
   display: flex;
   flex-direction: column;
@@ -159,9 +160,17 @@
 
 .dropdown-container {
   width: 100%;
-  position: relative;
+  position: fixed;
+  z-index: 3;
+  background-color: #e5d0e3;
+}
+
+.dropdown-selector {
+  border-bottom: #d892d1 solid 2px;
 }
 
 .dropdown a {
-  margin: 20px;
+  padding: 20px;
+  text-decoration: none;
+  font-weight: 700;
 }

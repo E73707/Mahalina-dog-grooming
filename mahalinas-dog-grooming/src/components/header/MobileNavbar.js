@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import logo from "../../img/1.png";
 import "../../styles/navTabs.css";
+
 function MobileNavbar({ sendDataToParent }) {
   const [isOpen, setIsOpen] = useState(false);
   const handleToggle = () => {

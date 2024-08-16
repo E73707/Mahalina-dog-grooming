@@ -3,9 +3,20 @@ import "../../styles/navTabs.css";
 import DesktopNavbar from "./DesktopNavbar";
 import MobileNavbar from "./MobileNavbar";
 
+import EmailPopup from "../main/EmailModal";
+
 export default function HeaderWrapper({ sendDataToParent }) {
   const [isMobile, setIsMobile] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
+
+  const handleOpenPopup = () => {
+    setShowPopup(true);
+  };
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
 
   const handleDropdownToggle = (data) => {
     setIsOpen(data);
@@ -45,7 +56,11 @@ export default function HeaderWrapper({ sendDataToParent }) {
               {" "}
               About{" "}
             </a>
-            <a className="dropdown-selector" href="#contact">
+            <a
+              onClick={handleOpenPopup}
+              className="dropdown-selector"
+              href="#contact"
+            >
               {" "}
               Contact{" "}
             </a>
@@ -60,6 +75,7 @@ export default function HeaderWrapper({ sendDataToParent }) {
           </div>
         )}
       </div>
+      {showPopup && <EmailPopup onClose={handleClosePopup} />}
     </header>
   );
 }

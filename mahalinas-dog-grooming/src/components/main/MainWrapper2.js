@@ -1,18 +1,21 @@
-import React, { useState, useEffect } from "react";
-import IntroWrapper from "./IntroWrapper";
-import "../../styles/main.css";
+import React from "react";
+
 import HomeFeatures from "./HomeFeatures";
 import Offers from "./Offers";
 import Testimonials from "./Testimonials";
 import CarouselSection from "./CarouselSection";
+import "../../styles/main.css";
+import Prices from "./Prices";
+import Footer from "./Footer";
 
-export default function MainWrapper() {
+export default function MainWrapper2() {
   return (
     <div className="main-wrapper">
-      <IntroWrapper />
-      {/* <HomeFeatures />
+      <HomeFeatures />
       <Offers />
-      <Testimonials /> */}
+      <Prices />
+      <Testimonials />
+      <Footer />
     </div>
   );
 }

@@ -17,7 +17,7 @@ figcaption {
 
 .home-features {
   --dl-space-space-fiveunits: 80px;
-  width: 100%;
+  max-width: 100%;
   display: grid;
   grid-gap: var(--dl-space-space-fiveunits);
   position: relative;
@@ -40,7 +40,7 @@ figcaption {
 
 .dog {
   width: 100%;
-  border-radius: 50px;
+  border-radius: 12px;
   object-fit: cover;
   aspect-ratio: 16 / 9;
 }

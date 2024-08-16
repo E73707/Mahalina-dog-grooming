@@ -11,13 +11,17 @@ import dog6 from "../../img/puppies.jpg";
 import dog7 from "../../img/shep.jpg";
 import Card from "./Card";
 
-function CarouselSection() {
+function CarouselSection({ direction = "forward" }) {
   const images = [Dog1, dog3, dog4, dog5, dog6, dog7];
   let [ref, { width }] = useMeasure();
   const xTranslation = useMotionValue(0);
   useEffect(() => {
     let controls;
-    let finalPosition = -width / 2 - 8;
+
+    let finalPosition =
+      direction === "forward" ? -width / 2 - 8 : width / 2 + 8;
+    const startPosition = direction === "forward" ? 0 : -finalPosition;
+
     controls = animate(xTranslation, [0, finalPosition], {
       ease: "linear",
       duration: 25,

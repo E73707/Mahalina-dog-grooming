@@ -18,7 +18,7 @@
 }
 .offers-container-width {
   gap: 80px;
-  width: 100%;
+  max-width: 100%;
   display: flex;
   align-items: flex-start;
 }
@@ -53,11 +53,11 @@
 
 .rotate-left {
   transform: rotate(-2deg);
-  background-color: #c9b9a2;
+  background-color: #e0bbdd;
 }
 .rotate-right {
   transform: rotate(2deg);
-  background-color: #b7a976;
+  background-color: #d892d1;
 }
 
 #card1 {
@@ -100,7 +100,7 @@
 }
 .dog {
   width: 100%;
-  border-radius: 50px;
+  border-radius: 12px;
   object-fit: cover;
   aspect-ratio: 16 / 9;
 }

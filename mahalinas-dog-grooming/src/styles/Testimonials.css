@@ -4,7 +4,100 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  padding: 2rem 0;
-  background-color: #f4f4f4;
-  height: 1200px;
+  padding: 7rem 0;
+}
+
+.testimonials h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.testimonials-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row: auto auto;
+}
+
+.testimonial {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  border-radius: 10px;
+  background-color: #e0bbdd;
+}
+
+.testimonial-background-card {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  background-color: #d892d1; /* Background color for the background card */
+  border-radius: 10px; /* Optional: rounded corners */
+  z-index: 1; /* Ensure it stays behind the testimonial card */
+  transition: transform 0.5s ease; /* Add a smooth transition */
+}
+
+.testimonial-card {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #e0bbdd; /* Background color for the main card */
+  padding: 20px;
+  border-radius: 10px; /* Optional: rounded corners */
+  z-index: 2; /* Ensure it stays on top of the background card */
+  transition: transform 0.5s ease; /* Add a smooth transition */
+}
+
+.testimonial:hover .testimonial-background-card {
+  transform: rotate(
+    -5deg
+  ); /* Rotate background card 15 degrees counter-clockwise */
+}
+
+.testimonial:hover .testimonial-card {
+  transform: rotate(5deg); /* Rotate testimonial card 15 degrees clockwise */
+}
+
+@media screen and (max-width: 980px) {
+  .testimonials-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.testimonial-image {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.testimonial-author {
+  font-weight: 700;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+}
+.testimonial-author-name {
+  margin-left: 1rem;
+}
+.testimonial-text {
+  margin: 1rem;
+}
+
+.testimonials-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.testimonials-header h1 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
 }

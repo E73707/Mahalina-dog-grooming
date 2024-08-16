@@ -1,9 +1,10 @@
 .intro-wrapper {
   display: flex;
   flex-direction: column;
-  background-color: #fbf9ef;
-  padding: 40px;
+  background-color: #e5d0e3;
+  padding-bottom: 40px;
   margin: auto;
+  gap: 40px;
 }
 
 .main-header {
@@ -20,26 +21,27 @@
 }
 
 #book-now-intro {
-  border: #658352 solid; /* Added explicit border style and width */
-  background-color: #658352;
+  border: #af63a8 solid; /* Added explicit border style and width */
+  background-color: #e5d0e3;
   align-items: center;
-  color: #e9e4c3;
+  color: black;
   transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 #book-now-intro:hover {
-  background-color: black;
+  background-color: #af63a8;
   color: #fbf9ef;
 }
 
 #learn-more-intro {
-  border: #658352 solid;
-  color: #658352;
+  border: #af63a8 solid;
+  color: black;
   text-decoration: none;
   transition: background-color 0.5s ease, color 0.5s ease;
 }
 #learn-more-intro:hover {
-  background-color: black;
+  background-color: #4f9dfe;
+  border: #4f9dfe solid;
   color: #fbf9ef;
 }
 .intro-buttons {
@@ -49,7 +51,7 @@
 
 .selector-intro {
   width: auto;
-  border-radius: 25px;
+  border-radius: 12px;
   align-items: center;
   font-size: 15px;
   font-weight: bold;
@@ -67,7 +69,14 @@
 
 .dog {
   width: 100%;
-  border-radius: 50px;
+  border-radius: 12px;
   object-fit: cover;
   aspect-ratio: 16 / 9;
+}
+
+.intro-logo {
+  width: 500px;
+  margin: auto;
+  overflow: hidden;
+  object-fit: cover;
 }
